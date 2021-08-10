@@ -8,7 +8,8 @@ Usage
 
 You may download the netCDF4 library it from https://www.unidata.ucar.edu/downloads/netcdf/
 
-! Execution method
+
+# Execution method
 
 1. Specify netCDF library
 (Example): 
@@ -20,8 +21,7 @@ ifort -o exec_ctl.out solve_BCSmodel_Kohyama2021.f90  $FPATH_FORT  $LPATH_FORT  
 ./exec_ctl.out < param_withnoise_gc01_ctl.nml
   
   
-! Optional runs
-
+# Optional runs
 (1) nodyn: Atmospheric temperature used to calculate the wind stress is replaced by the climatological value
 (the name of external file is specified by fname_mean)
 ifort -o exec_ctl.out solve_BCSmodel_Kohyama2021.f90  $FPATH_FORT  $LPATH_FORT   -lnetcdff -lnetcdf -nodyn -cpp
